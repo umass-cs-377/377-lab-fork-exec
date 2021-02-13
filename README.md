@@ -9,7 +9,7 @@ Please submit your answers to this lab on Gradescope in the assignment marked â€
 Once you have logged in to Edlab, you can clone this repo using
 
 ```bash
-git clone https://github.com/umass-cs-377/377-lab-inverted-index.git
+git clone https://github.com/umass-cs-377/377-lab-fork-exec.git
 ```
 
 Then you can use `cd` to open the directory you just cloned:
