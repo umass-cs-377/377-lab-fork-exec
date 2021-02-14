@@ -45,9 +45,7 @@ int main() {
 }
 ```
 
-As can be seen in the code, pointers allow for a lot of memory reference to be carried out in C++. We can also combine multiple operators together. This means that ‘&(*pointer)’ will result in just ‘pointer’, but there could be problems if ‘*(*pointer)’ is called, since that would be looking at the data stored with memory address of ‘*pointer’.
-
-Answer the following questions about pointers. All code that is written or that you write should be treated as though it is at the commented section above.
+As can be seen in the code, pointers allow for a lot of memory reference to be carried out in C++. We can also combine multiple operators together. This means that ‘&(*pointer)’ will result in just ‘pointer’, but there could be problems if ‘*(*pointer)’ is called, since that would be looking at the data stored with memory address of ‘*pointer’. In general, using '(*variable)' for something such as 'variable = 1' will throw an error.
 
 ## Part 2: Fork (10 Points)
 
