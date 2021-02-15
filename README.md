@@ -20,7 +20,7 @@ cd 377-lab-fork-exec
 
 This repo includes a Makefile that allows you to locally compile and run all the sample code listed in this tutorial. You can compile them by running `make`. Feel free to modify the source files yourself, after making changes you can run `make` again to build new binaries from your modified files. You can also use `make clean` to remove all the built files, this command is usually used when something went wrong during the compilation so that you can start fresh.
 
-## Part 1: Pointers (15 Points)
+## Part 1: Pointers (10 Points)
 
 When programming in C++, we will frequently make use of pointers. Every variable that we make use of in this class has a memory location, which we can access through the ‘&’ operator. When we have such a memory location, we can then access its stored value through the ‘*’ operator. We use this same operator when declaring our pointers in the code. As an example, take the following code:
 
@@ -130,7 +130,7 @@ int main() {
 
 When ./exec is run after being created from exec.cpp with the ‘make’ command, it will run print.cpp with the ./print command. In doing this, it also passes the arguments of “one” and “two”. The code in print.cpp will then run, printing each of the arguments passed to it. However, if you see the output, you might be wondering why the ‘ls’ command doesn’t work. This is because, as mentioned earlier, the OS replaces the code of ./exec with the code for ./print once execvp in this case is called. Thus, the second execvp will never run. If it did, it would simply run the ls command on the machine.
 
-## Part 4: Processes (15 Points)
+## Part 4: Processes (20 Points)
 
 There are other useful commands we can run when creating and modifying processes. First, we have the wait() and waitpid() commands, which are used to make a process wait until a different process has finished. The wait() function is fairly simply, and makes the process wait until its children finish first. The waitpid() command is slightly more complicated. For this lab and class, we won’t fully go over the options for waitpid(), though it is interesting reading here: https://linux.die.net/man/2/waitpid. For waitpid(), the first parameter is a process ID. If this is a valid process ID (such as the one returned by fork()), then the process will wait until that child process has finished. This will also work if the process ID is negative (for example, pid -1234 will be treated as pid 1234). If the process ID is -1, then the program will wait for any child process to finish, effectively becoming identical to the wait() command. If the process ID is 0, it will wait for any child process with a process group ID equal to that of the parent. As an example of how waitpid() can work with code, take the following example:
 
