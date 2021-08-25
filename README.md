@@ -1,4 +1,4 @@
-# COMPSCI 377 LAB #2: Fork and Exec
+# COMPSCI 377 LAB: Fork and Exec
 
 ## Purpose
 
