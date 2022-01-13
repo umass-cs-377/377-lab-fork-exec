@@ -8,6 +8,8 @@ The TA present in your lab will do a brief explanation of the various parts of t
 
 Please read through this lab and follow the instructions. After you do that, visit Gradescope and complete the questions associated with this lab by the assigned due date.
 
+**You may work in groups up to 3 to complete this lab. Make sure you submit as a group in Gradescope.**
+
 ## Setup
 
 Once you have logged in to Edlab, you can clone this repo using
