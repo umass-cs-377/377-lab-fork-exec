@@ -23,4 +23,5 @@ int main() {
 
 	//Question code goes here
 	cout << (int)getpid() << " Finished.\n";
+	sleep(1);
 }
